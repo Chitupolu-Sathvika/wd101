@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <style>
+        #d1{
+            text-align: centre;
+        }
+        .c1{
+            float: left;
+        }
+        .c2{
+            float: right;
+        }
+        .form-center {
+            display:flex;
+            justify-content: center;
+        }
+        input#name: invalid: focus{
+            border-color: 1px solid red;
+        }
+        input#email: invalid: focus{
+            border-color: 1px solid red;
+        }
+        input#password: invalid: focus{
+            border-color: 1px solid red;
+        }
+        input#dob: invalid: focus{
+            border-color: 1px solid red;
+        }
+        .text-3xl text-centre font-bold leading-tight{
+		text : 3xl;
+            text: centre;
+		font : bold;
+		leading: tight;
+	    display:flex;
+            justify-content: down;
+        }
+    </style>
+        
+</head>
+<body>
+    <centre><div id="d1" class="form-center">
+        <div class="c1">
+            <div class="c2">
+                <h1 style="text-align: centre"><b>Registration Form</b></h1>
+            
+                <form id="f1">
+
+                    <label for="name" class="c1">Name</label>
+
+                    <input required="Please fill in this field" type="text" id="name" name="name" class="c2" placeholder="Enter full name"><br><br>
+
+                    <label for="email" class="c1">Email</label>
+
+                    <input required type="email" id="email" name="email" class="c2" placeholder="Enter email"><br><br>
+
+                    <label for="password" class="c1">Password</label>
+
+                    <input required="Please enter the password" type="password" id="password" name="password" class="c2" placeholder="Enter password"><br><br>
+
+                    <label for="dob" class="c1">Date of Birth</label>
+
+                    <input required type="date" id="dob" name="dob" class="c2" min="1968-08-08" max="2005-08-08"><br><br>
+
+                    <input required type="checkbox" id="acceptTerms" name="acceptTerms">
+
+                    <label required for="acceptTerms">Accept Terms & Conditions</label><br><br>
+
+                    <button required type="submit" class="c1" style="background: green">Submit</button>
+                   
+
+                </form>
+  
+        </div>
+            </div>
+         
+
+        <div
+            class="relative bg-white px-6 mt-5 pt-10 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:rounded-lg sm:px-10">
+            <div class="mx-auto">
+                <h2 class="text-3xl text-centre font-bold leading-tight">Entries</h2>
+                <div class="divide-y divide-gray-300/50" id="user-entries"></div>
+            </div>
+        </div>
+
+    </div></centre>
+    <script src="index.js"></script>
+</body>
+</html>
